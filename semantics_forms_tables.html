@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="semantics_forms_tables.css">
+  </head>
+  <body>
+
+    <form action="/login" method="post">
+      <input type="text" name="username">
+      <input type="date" name="birthday">
+      <input type="time" name="game-time">
+      <input type="email" name="email-address">
+      <input type="url" name="website">
+      <input type="number" name="cost">
+      <input type="tel" name="phone-number">
+
+      <br>
+
+      <textarea name="comment">Add your comment here</textarea>
+
+      <br>
+
+      <input type="radio" name="day" value="Friday" checked> Friday
+      <input type="radio" name="day" value="Saturday"> Saturday
+      <input type="radio" name="day" value="Sunday"> Sunday
+
+      <br>
+
+      <input type="checkbox" name="day" value="Friday" checked> Friday
+      <input type="checkbox" name="day" value="Saturday"> Saturday
+      <input type="checkbox" name="day" value="Sunday"> Sunday
+
+      <br>
+
+      <select name="day" multiple="">
+        <option value="Friday" selected>Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+
+      <br>
+
+      <input type="submit" name="submit" value="Send">
+
+      <br>
+
+      <button name="submit">
+        <strong>Send Us</strong> a Message
+      </button>
+      <input type="hidden" name="tracking-code" value="abc-123">
+
+      <br>
+
+      <input type="file" name="file">
+
+      <br>
+
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username">
+
+      <br>
+
+      <label>
+        <input type="radio" name="day" value="Friday" checked>Friday
+      </label>
+      <label>
+        <input type="radio" name="day" value="Saturday"> Saturday
+      </label>
+      <label>
+        <input type="radio" name="day" value="Sunday"> Sunday
+      </label>
+
+      <br>
+
+      <fieldset>
+        <label>
+          Username
+          <input type="text" name="username"
+        </label>
+        <label>
+          Password
+          <input type="text" name="password">
+        </label>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Login</legend>
+        <label>
+          Username
+          <input type="text" name="usernme" disabled>
+        </label>
+        <label>
+          Password
+          <input type="text" name="password">
+        </label>
+        <label>
+          Email Address
+          <input type="email" name="email-address" placeholder="name@domain.com">
+        </label>
+      </fieldset>
+
+      <br>
+
+      <label>
+        Email Address
+        <input type="email" name="email-address" required>
+      </label>
+      <input type="submit" name="submit">
+
+    </form>
+
+    <br>
+
+    <form>
+      <fieldset class="account-info">
+        <label>
+          Username
+          <input type="text" name="username">
+        </label>
+        <label>
+          Password
+          <input type="password" name="password">
+        </label>
+      </fieldset>
+
+      <br>
+
+      <fieldset class="account-action">
+        <input class="btn" type="submit" name="submit" value="Login">
+        <label>
+          <input type="checkbox" name="remember"> Stay signed in
+        </label>
+      </fieldset>
+    </form>
+
+    <br>
+
+    <table>
+      <caption>Design and Front-End Develpment Books</caption>
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Availability</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Don&#8217;t Make Me Think by Steve Krug</td>
+        <td>In Stock</td>
+        <td>1</td>
+        <td>$30.02</td>
+      </tr>
+      <tr>
+        <td>A Project Guide to UK Design by Russ Unger &#38; Carolyn Chandler</td>
+        <td>In Stock</td>
+        <td>2</td>
+        <td>$52.94</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Subtotal</td>
+        <td>$135.36</td>
+      </tr>
+      <tr>
+        <td colspan="3">Tax</td>
+        <td>$13.54</td>
+      </tr>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>$148.90</td>
+      </tr>
+    </tfoot>
+    </table>
+
+  </body>
+</html>
